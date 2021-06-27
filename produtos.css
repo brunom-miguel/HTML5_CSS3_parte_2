@@ -1,0 +1,15 @@
+header {
+    background-color: #BBBBBB;
+}
+nav li {
+    display: inline;/*Transformando as listas do menu para o formato inline (de forma a ficarem uma do lado da outra)*/
+    margin: 0 0 0 15px; /*Define o espaçamento externo das linhas. O espaçamento entre as linhas da navegação são feitas no item (nav li) e não no linl (nav a), pois a alteração é no comportamento externo das linhas, e não no conteúdo*/
+}
+
+nav a {
+    text-transform: uppercase; /*Tranforma o texto em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*Define o texto em "negrito"*/
+    font-size: 22px; /*Define o tamanho da letra*/
+    text-decoration: none; /*Tira a decoração do texto (o sublinhado)*/
+}
