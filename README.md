@@ -48,4 +48,10 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
 ### Border-box
 
 * Quando incluimos um espaçamento interno (padding), sendo que já contabilizamos os percentuais para fechar 100%, o navegador soma os pixels do padding + o percentual, assim temos uma quebra de bloco.
-* Com **border-box** conseguimos definir uma largura fixa do elemento, e o navegador inclui os pixels (do padding) que incluimos DENTRO do percentual definido 
+* Com **border-box** conseguimos definir uma largura fixa do elemento, e o navegador inclui os pixels (do padding) que incluimos DENTRO do percentual definido
+
+##### Questão
+
+* Qual o comportamento do elemento quando adicionamos espaçamento interno, o **padding**?
+    * O elemento aumenta seu tamanho:
+        * Quando declaro um espaçamento interno, estou ***aumentando*** o conteúdo.

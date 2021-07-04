@@ -43,6 +43,7 @@ nav a {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box; /*com essa propriedade, os "30%" do WIDTH são definitivos, e o padding está contando DENTRO dos 30% do WIDTH*/
+    border: 2px solid #000000;
 }
 
 .produtos h2 {
