@@ -28,3 +28,34 @@ nav a {
     font-size: 22px; /*Define o tamanho da letra*/
     text-decoration: none; /*Tira a decoração do texto (o sublinhado)*/
 }
+
+.produtos { /*essa classe está marcando a lista "ul". Fazemos esse posicionamento para centralizar a lista*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li { /*as "li" dentro da classe "produtos"*/
+    display: inline-block; /*para fazer as "li" ficarem uma do lado da outra*/
+    text-align: center; /*para alinhar o texto dentro das "li" para o centro*/
+    width: 30%; /*página tem 100%, dividindo por 3 dá apoximadamente 30% para cada "li"*/
+    vertical-align: top; /*o inline-block sempre alinha o conteúdo pela linha de baixo, com o "vertical-align: top" mudamos o alinhamento*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*com essa propriedade, os "30%" do WIDTH são definitivos, e o padding está contando DENTRO dos 30% do WIDTH*/
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*para cima, para os lados, para baixo*/
+}
