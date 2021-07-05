@@ -55,3 +55,16 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
 * Qual o comportamento do elemento quando adicionamos espaçamento interno, o **padding**?
     * O elemento aumenta seu tamanho:
         * Quando declaro um espaçamento interno, estou ***aumentando*** o conteúdo.
+
+### Borda
+
+* Quando adiciono a declaração de borda abaixo, qual o comportamento esperado?
+    * ```CSS
+      border: 3px solid #000000;
+      ```
+    * Uma borda *sólida*, com *3 pixels de largura*, **entre** o *padding* e a *margin*.
+
+##### Borda com canto arredondado
+
+* Funcionalidade veio na versão 3 do CSS (CSS3)
+    * Usamos a propriedade *border-radius* (raio da borda)
