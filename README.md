@@ -114,3 +114,12 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
             border-color: #088C19; 
         }
       ```
+
+### Imagem no Background
+
+* Adincionamos usando o valor *url* no *background* do elemento (no CSS):
+    * No CSS referenciamos o endereço de uma imagem, usando o valor *url*.
+
+### Unicode
+
+* Site do [Unicode Table](https://unicode-table.com/en/)

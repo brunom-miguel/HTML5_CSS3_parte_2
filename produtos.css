@@ -84,3 +84,9 @@ footer {
     background: url("bg.jpg"); /*imagem pequena e o CSS vai replicando no resto do tamanho do elemento*/
     padding: 40px 0;
 }
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
