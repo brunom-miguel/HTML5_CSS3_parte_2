@@ -1,4 +1,7 @@
 # HTML5_CSS3_parte_2
+
+## Página: PRODUTOS 
+
 Segunda parte da formação Front-end da Alura.
 
 * Já estava criado, na parte 1, a página inicial do projeto. Arquivo *index.html* e *style.css*
@@ -123,3 +126,15 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
 ### Unicode
 
 * Site do [Unicode Table](https://unicode-table.com/en/)
+
+## Página: CONTATO
+
+### Formulários
+
+Para decidir quando devemos usar um formulário nas nossas páginas, alguns motivos podem ser analisados:
+
+1. Quando queremos enviar dados para um servidor;
+2. Quando queremos capturar informações que o usuário digitar;
+3. Quando queremos enviar os dados para uma outra página.
+
+Um formulário pode servir para, entre outras coisas, enviar os dados para uma outra página, capturar informações que o usuário digitar e enviar os dados para um servidor.
