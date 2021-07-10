@@ -29,6 +29,11 @@ nav a {
     text-decoration: none; /*Tira a decoração do texto (o sublinhado)*/
 }
 
+nav a:hover {
+    color: #C76C16; /*altera a cor da borda quando o mouse passar por cima*/
+    text-decoration: underline; /*inclui o "sublinhado" quando o mouse passar por cima*/
+}
+
 .produtos { /*essa classe está marcando a lista "ul". Fazemos esse posicionamento para centralizar a lista*/
     width: 940px;
     margin: 0 auto;
@@ -45,6 +50,18 @@ nav a {
     box-sizing: border-box; /*com essa propriedade, os "30%" do WIDTH são definitivos, e o padding está contando DENTRO dos 30% do WIDTH*/
     border: 2px solid #000000;
     border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C76C16; /*altera a cor da borda quando o mouse passar por cima*/
+}
+
+.produtos li:hover h2 {
+    font-size: 34px; /*para alterar o tamanho da fonte, preciso indicar a tag (no caso H2) que será alterada.*/
+}
+
+.produtos li:active {
+    border-color: #088C19; /*altera a cor da borda quando o "clique" do mouse está pressionado (ativo)*/
 }
 
 .produtos h2 {

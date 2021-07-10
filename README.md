@@ -68,3 +68,49 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
 
 * Funcionalidade veio na versão 3 do CSS (CSS3)
     * Usamos a propriedade *border-radius* (raio da borda)
+
+### Pseudo-classes de estado
+
+##### *:hover*
+
+* O *:hover* atua modificando o estado do elemento enquanto o usuário está com o mouse em cima.
+    * ```CSS
+        nav a:hover {
+        color: #C76C16;
+        text-decoration: underline;
+        }
+     ```
+* Em **todos** os elementos do HTML conseguimos mapear o comportamento com CSS e alterar o visual do elemento;
+    * Exemplo alterando a cor da borda de um **li**:
+        * ```CSS
+            .produtos li:hover {
+                border-color: #C76C16;
+             }
+          ```
+* Alteração de tamanho da fonte:
+    * Para alterar o tamanho da fonte de um elemento (título, por exemplo), não basta apenas incluir dentro do *:hover*, pois o tamanho do título já está definido previamente.
+        * ```CSS
+            .produtos li:hover {
+                    border-color: #C76C16;
+                    font-size: 40px;
+            }
+          ```
+    * Para que a fonte seja alterada, preciso indicar que quero modificar o elemento do texto específico:
+        * ```CSS
+            .produtos li:hover h2 {
+                font-size: 40px;
+            }
+          ```
+        * Com o **.produtos li:hover** estou indicando que quero modificar o comportamento do *li*, mas não do *h2*. Para que o *h2* seja modificado, preciso indicar isso.
+* Podemos usar o comportamento do *:hover* em um elemento quando:
+    * Queremos realçar alguma característica quando o mouse do usuário estiver por cima do elemento;
+        * No *:hover*, **mapeamos** o comportamento do mouse por cima do elemento, e podemos usar isso para destacar visualmente o elemento em questão.
+
+##### *active*
+
+* O *:active* atua modificando o estado do elemento enquanto o usuário está com o "clique" do mouse ativo no elemento.
+    * ```CSS
+        .produtos li:active {
+            border-color: #088C19; 
+        }
+      ```
