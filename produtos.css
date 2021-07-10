@@ -78,3 +78,9 @@ nav a:hover {
     font-weight: bold;
     margin: 10px 0 0; /*para cima, para os lados, para baixo*/
 }
+
+footer {
+    text-align: center; /*centraliza o texto dentro do elemento*/
+    background: url("bg.jpg"); /*imagem pequena e o CSS vai replicando no resto do tamanho do elemento*/
+    padding: 40px 0;
+}
