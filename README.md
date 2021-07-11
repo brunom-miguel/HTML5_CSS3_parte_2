@@ -155,3 +155,21 @@ Um formulário pode servir para, entre outras coisas, enviar os dados para uma o
             * ```HTML
                 <input type="submit" value="Enviar formulário">
               ```
+    * Para criar um campo de seleção usamos, na tag *input* o *type="radio"*, dessa forma selecionamos a opção desejada;
+        * Também fazemos a ligação com uma tag *label* por meio do **id**;
+        * No *name* colocamos os *inputs* que tem ligação, para que ao selecionar um, o outro seja desmarcado:
+            * ```HTML
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contato" value="email" id="radio-email">
+
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+                <label for="radio-whatsapp">WhatsApp</label>
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+          ```
+* Para incluir um campo de texto livre usamos a tag *textarea*
+    * Por ser uma tag de conteúdo, ela tem a tag de fechamento:
+        * ```HTML
+            <textarea id="mensagem" cols="70" rows="10"></textarea>
+        ```
