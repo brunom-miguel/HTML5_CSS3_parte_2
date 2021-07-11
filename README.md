@@ -168,8 +168,42 @@ Um formulário pode servir para, entre outras coisas, enviar os dados para uma o
                 <label for="radio-whatsapp">WhatsApp</label>
                 <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
           ```
+        * Podemos criar o vínculo entre o *label* e o *input* incluindo, também, um dentro do outro, isso também inverte a posição da "bolinha" do **checkbox**/**radio**:
+            * ```HTML
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">Email
+                </label>
+                
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp
+                </label>
+              ```
 * Para incluir um campo de texto livre usamos a tag *textarea*
     * Por ser uma tag de conteúdo, ela tem a tag de fechamento:
         * ```HTML
             <textarea id="mensagem" cols="70" rows="10"></textarea>
         ```
+
+###### Qual a melhor abordagem quando temos uma configuração CSS aplicada para um item e queremos replicar ela para um item parecido?
+
+* Usar os seletores dos itens separados por vírgula:
+    * ```CSS
+        form label, form p {
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+        }
+      ```
+* Criar uma classe:
+    * ```CSS
+        .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+        }
+      ```
