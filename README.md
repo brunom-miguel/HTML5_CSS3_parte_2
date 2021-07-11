@@ -138,3 +138,20 @@ Para decidir quando devemos usar um formulário nas nossas páginas, alguns moti
 3. Quando queremos enviar os dados para uma outra página.
 
 Um formulário pode servir para, entre outras coisas, enviar os dados para uma outra página, capturar informações que o usuário digitar e enviar os dados para um servidor.
+
+#### Campo *form*
+
+* Tag *input* com *type="text"* para incluir um campo de texto;
+    * Junto com a tag *input* sempre inserimos a tag *label*
+    * *input* geralmente é único, então incluimos um identificador (*id*);
+    * Conecto o *label* e o *input* com um **id** e **for**:
+        * ```HTML
+            <label for="nome-sobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nome-sobrenome">
+          ```
+    * Usamos o *type="submit"*, para enviar o formulário para onde direcionarmos;
+        * O valor do texto no botão será traduzido de *submit* para a língua usada no browser;
+        * Para mudar o texto dentro do botão, colocamos o *value="novo texto"*:
+            * ```HTML
+                <input type="submit" value="Enviar formulário">
+              ```
