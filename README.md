@@ -207,3 +207,21 @@ Um formulário pode servir para, entre outras coisas, enviar os dados para uma o
         width: 50%;
         }
       ```
+
+#### Select
+
+* Com a tag *select*, criamos um seletor de opções, ao incluir o *option*:
+    * ```HTML
+        <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+        </select>
+      ```
+
+####  Hierarquia CSS
+
+* Tag: 1
+* Class: 10
+* Id: 100
+* Inline: 1000
