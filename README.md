@@ -225,3 +225,49 @@ Um formulário pode servir para, entre outras coisas, enviar os dados para uma o
 * Class: 10
 * Id: 100
 * Inline: 1000
+
+#### Input type
+
+Melhorias de experiência para o usuário:
+
+* Para texto:
+    * ```HTML
+        <input type="text">
+      ```
+        * Abre o teclado normal;
+* Para email:
+    * ```HTML
+        <input type="email">
+      ```
+        * Abre o teclado normal, mas com algumas adaptações (inclusão do *@*, *.*, *.com*);
+* Para telefone:
+    * ```HTML
+        <input type="tel">
+      ```
+        * Abre teclado númerico propício para telefone;
+* Para inserir números:
+    * ```HTML
+        <input type="number">
+      ```
+        * Abre teclado na parte de números;
+* Para inserir senhas:
+    * ```HTML
+        <input type="password">
+      ```
+        * Transforma os números digitados em *asteríscos* ou *bolinhas*;
+* Para inserir data:
+    * ```HTML
+        <input type="date">
+      ```
+* Para inserir data e hora:
+    * ```HTML
+        <input type="datetime">
+      ```
+* Para inserir mês:
+    * ```HTML
+        <input type="month">
+      ```
+* Para inserir campo de busca:
+    * ```HTML
+        <input type="search">
+      ```
