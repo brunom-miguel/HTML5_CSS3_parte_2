@@ -289,3 +289,32 @@ Melhorias de experiência para o usuário:
         * ```HTML
             <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
           ```
+#### Melhorando a semântica do formulário
+
+* Em um formulário (dentro das tags *form*), para agrupar elementos do *form* que são relacionados, usamos a tag *fieldset*, ao invés da tag *div*. Além disso, para dar um título à seleção, usamos a tag *legend*, ao invés da tag *p*;
+    * Sendo assim, ao invés de fazer assim:
+        * ```HTML
+            <form>
+                <div>
+                    <p>Qual horário prefere ser atendido?</p>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+            </form>
+          ```
+    * Fazemos assim:
+        * ```HTML
+            <form>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+            </form>
+          ```
