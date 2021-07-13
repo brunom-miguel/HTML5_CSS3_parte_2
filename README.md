@@ -226,7 +226,7 @@ Um formulário pode servir para, entre outras coisas, enviar os dados para uma o
 * Id: 100
 * Inline: 1000
 
-#### Input type
+#### Input para celulares
 
 Melhorias de experiência para o usuário:
 
@@ -271,3 +271,21 @@ Melhorias de experiência para o usuário:
     * ```HTML
         <input type="search">
       ```
+
+#### Dados importantes no *input*
+
+* *input* obrigatório:
+    * Para tornar o campo do *input* obrigatório, basta incluir o **required** dentro:
+        * ```HTML
+            <input type="text" id="nome-sobrenome" class="input-padrao" required>
+          ```
+* Mensagem dentro do input:
+    * Para colocar uma mensagem dentro do *input* explicando, basta incluir o **placeholder** dentro:
+        * ```HTML
+            <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+          ```
+* Sugestão de marcação em botões *radio* ou *checkbox*:
+    * Para deixar uma opção já marcada, como opção para o cliente, eu incluo o **checked** dentro do *input*:
+        * ```HTML
+            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+          ```
