@@ -389,3 +389,28 @@ Melhorias de experiência para o usuário:
                 <td colspan="2" class="cidade-tabela">Porto Alegre</td>
             </tr>
           ```
+
+#### Section
+
+* Quando temos um conteúdo que corresponde ao mesmo objetivo, falam da mesma coisa e tem o mesmo fim, usamos a tag *section*.
+
+* Diferença de *div* e *section*:
+    * *div* : é uma divisão visual;
+    * *section* : é uma divisão onde tem um conteúdo complexo;
+        * Semanticamente as coisas fazem sentido (titulo e texto para a mesma coisa);
+    * Exemplo:
+        * ```HTML
+            <section class="beneficios">
+                <h3 class="titulo-centralizado">Benefícios</h3>
+
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento aos clientes</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais qualificados</li>
+                </ul>
+                <img class="imagem-beneficios" src="beneficios.jpg" alt="imagem beneficios">
+            </section>
+          ```
+        * No exemplo acima temos um titulo (*h3*), uma lista (*ul*/*li*) e uma imagem (*img*). Todos para o mesmo assunto, mesmo objetivo.
+    * Em geral, para um bloco onde o conteúdo tenha o mesmo significado, mesmo sentido, usamos uma *section*.
