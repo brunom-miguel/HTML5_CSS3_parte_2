@@ -318,3 +318,16 @@ Melhorias de experiência para o usuário:
                 </fieldset>
             </form>
           ```
+
+#### Transições
+
+* No CSS3, para fazermos transições de cor, por exemplo, usamos a propriedade *transition* e informamos o tempo que queremos que a transição leve e o que será alterado:
+    * ```CSS
+        .enviar {
+            transition: 0.5s background;
+        }
+        .enviar:hover {
+            background-color: darkorange;
+        }
+      ```
+    

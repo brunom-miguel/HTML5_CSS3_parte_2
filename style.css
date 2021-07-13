@@ -116,3 +116,20 @@ form label, form legend {
 .checkbox {
     margin: 20px 0;
 }
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s background; /*para fazer a transição da cor do fundo coloco os segundos e o que quero que mude*/
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
