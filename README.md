@@ -366,3 +366,6 @@ Melhorias de experiência para o usuário:
                         transform: rotate(70deg) scale(1.2);
                     }
                 ```
+#### Tabelas
+
+* Tabelas são conjuntos de linhas e colunas. Para criar uma tabela no HTML começamos com a tag *table*. Cada linha é definida pela tag *tr* (table row) e dentro de cada linha colocamos as divisórias (colunas) com a tag *td* (table division)
