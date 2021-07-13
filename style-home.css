@@ -1,9 +1,5 @@
 body {
-
-}
-
-.titulo-principal {
-    padding-left: 20px;
+    margin: 0 auto;
 }
 
 #banner {
@@ -16,7 +12,9 @@ body {
 }
 
 .titulo-centralizado {
-    text-align: center
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
 }
 
 p {
@@ -24,7 +22,8 @@ p {
 }
 
 #missao {
-    font-size: 20px
+    font-size: 20px;
+    padding: 5px 0;
 }
 
 em strong {
@@ -40,11 +39,16 @@ em strong {
     font-style: italic;
 }
 
-ul {
+.lista-beneficios {
     display: inline-block;
     vertical-align: top; /*alinha elementos da mesma linha pela linha de cima*/
     width: 20%;
     margin-right: 15%;
+    padding: 0 0 0 50px;
+}
+
+.lista-beneficios li {
+    list-style: circle;
 }
 
 .imagem-beneficios {
