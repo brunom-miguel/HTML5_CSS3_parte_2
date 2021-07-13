@@ -149,3 +149,8 @@ td, th { /*estilizção para as células*/
     border: 1px solid #000000; /*borda para as células*/
     padding: 8px 15px;
 }
+
+.cidade-tabela {
+    text-align: center;
+    padding: 4px 15px;
+}

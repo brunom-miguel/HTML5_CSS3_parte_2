@@ -383,3 +383,9 @@ Melhorias de experiência para o usuário:
                   ```
         * *tbody* para o **corpo**;
         * *tfoot* para o **rodapé**.
+    * As tabelas também nos oferecem a possibilidade de juntar células, quando uma linha, que deveria ter 5 células, passa a mostrar só "uma célula". Esse efeito é conseguido através da propriedade *colspan=X*, onde X é o número de células que você quer agrupar:
+        * ```HTML
+            <tr>
+                <td colspan="2" class="cidade-tabela">Porto Alegre</td>
+            </tr>
+          ```
