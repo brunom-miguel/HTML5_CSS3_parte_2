@@ -134,3 +134,18 @@ form label, form legend {
     background-color: darkorange;
     transform: scale(1.2); /*scale() = importante usarmos o scale e ao invés de usar percentual (%) usamos a ideia de multiplicaçao (nesse caso, por 1.2)*/
 }
+
+table { /*estilização da localização da tabela*/
+    margin: 20px 0 40px;
+}
+
+thead { /*estilização para o cabeçalho*/
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th { /*estilizção para as células*/
+    border: 1px solid #000000; /*borda para as células*/
+    padding: 8px 15px;
+}

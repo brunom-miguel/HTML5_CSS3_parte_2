@@ -382,4 +382,4 @@ Melhorias de experiência para o usuário:
                     </thead>
                   ```
         * *tbody* para o **corpo**;
-        * *tfooter* para o **rodapé**.
+        * *tfoot* para o **rodapé**.
