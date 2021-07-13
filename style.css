@@ -126,10 +126,11 @@ form label, form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 0.5s background; /*para fazer a transição da cor do fundo coloco os segundos e o que quero que mude*/
+    transition: 0.5s all; /*para fazer a transição da cor do fundo coloco os segundos e o que quero que mude*/
+    cursor: pointer;
 }
 
 .enviar:hover {
     background-color: darkorange;
-    cursor: pointer;
+    transform: scale(1.2); /*scale() = importante usarmos o scale e ao invés de usar percentual (%) usamos a ideia de multiplicaçao (nesse caso, por 1.2)*/
 }

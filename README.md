@@ -330,4 +330,39 @@ Melhorias de experiência para o usuário:
             background-color: darkorange;
         }
       ```
-    
+    * Podemos definir que a transição ocorrerá para **todos** os elementos mudando o *background* para *all*:
+        * ```CSS
+            .enviar {
+                transition: 0.5s all;
+            }
+            .enviar:hover {
+                background-color: darkorange;
+            }
+          ```
+#### Transformações
+
+* No CSS3, para fazermos transformações no elemento que queremos, ao estar com o cursor em cima, por exemplo, usamos a propriedade *transform*;
+    * Com o *transform* podemos aumentar o tamanho de todas as medidas do elemento proporcionalmente sem termos que fazer cálculos, usando o *scale()*;
+        * Para aumentar em 20% o tamanho do botão de enviar, ao passar com o mouse por cima, por exemplo, ficará da seguinte forma:
+            * ```CSS
+                .enviar:hover {
+                    background-color: darkorange;
+                    transform: scale(1.2); /*importante usarmos o scale e ao invés de usar percentual (%) usamos a ideia de multiplicaçao (nesse caso, por 1.2)*/ 
+                }
+              ```
+    * Com o *transform* podemos também girar o elemento ao passar com o mouse por cima, usando o *rotate()*:
+        * Para girar em 70º usamos:
+            * ```CSS
+                .enviar:hover {
+                    background-color: darkorange;
+                    transform: scale(1.2); /*importante usarmos o scale e ao invés de usar percentual (%) usamos a ideia de multiplicaçao (nesse caso, por 1.2)*/ 
+                    transform: rotate(70deg); /*gira o elemento em quantos graus eu quiser (deg = degree = grau)*/
+                }
+              ```
+            * No entanto, se fizermos da forma acima, o tamanho (do *scale()*) não será mais realizado, pois a propriedade é a mesma e a de baixo *rotate()* sobrescreve a de cima *scale()*. Para solucionar isso, fazemos da seguinte forma:
+                * ```CSS
+                    .enviar:hover {
+                        background-color: darkorange;
+                        transform: rotate(70deg) scale(1.2);
+                    }
+                ```
