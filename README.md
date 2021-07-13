@@ -369,3 +369,17 @@ Melhorias de experiência para o usuário:
 #### Tabelas
 
 * Tabelas são conjuntos de linhas e colunas. Para criar uma tabela no HTML começamos com a tag *table*. Cada linha é definida pela tag *tr* (table row) e dentro de cada linha colocamos as divisórias (colunas) com a tag *td* (table division)
+* Para que a tabela seja semântica, usamos tags para definir o que é o cabeçalho, o que é o corpo e o que é o rodapé da tabela;
+    * Para isso usamos as tags:
+        * *thead* para **cabeçalho**;
+            * Para as divisões (células) dentro do cabeçalho, usamos a tag *th* ao invés da *tr*:
+                * ```HTML
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                  ```
+        * *tbody* para o **corpo**;
+        * *tfooter* para o **rodapé**.
