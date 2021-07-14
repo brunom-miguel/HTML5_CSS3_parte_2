@@ -481,3 +481,24 @@ Benefícios do uso de fontes externas:
 #### Trabalhando com mapas
 
 Importamos o mapa pelo google [maps](https://www.google.com.br/maps).
+
+#### Trabalhando com vídeos
+
+Entramos no vídeo que queremos importar, no YouTube, por exemplo, e seguimos os passos abaixo:
+* Entrar na opção de *compartilhar*;
+* Clicar na opção de *incorporar*;
+* Copiamos o conteúdo do *iframe* e colamos no HTML onde queremos que o vídeo fique.
+
+Quando queremos fazer algum detalhe visual em cima do *iframe* que trouxemos, seja video ou mapa (no caso anterior), "envelopamos" dentro de uma *div* e trata tudo nessa *div* (como centralizar, por exemplo). Exemplo:
+
+```HTML
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+```
+```CSS
+    .video {
+    width: 560px;
+    margin: 1em auto;
+    }
+```
