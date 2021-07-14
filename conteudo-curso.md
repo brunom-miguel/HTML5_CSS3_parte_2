@@ -445,3 +445,25 @@ Melhorias de experiência para o usuário:
         margin: 0 0 1em; /* espaço para baixo igual ao tamanho da própria fonte (que no caso, é 2x o tamanho da fonte padrão) */
     }
 ```
+
+#### Float
+
+Com o *float* conseguimos fazer o elemento "flutuar", mas continuar ocupando o espaço na página, ou seja ele não vai ficar por cima de nenhum elemento.
+```CSS
+    .utensilios {
+        width: 150px;
+        float: left; /* designamos para que lado queremos que o elemento flutue */
+    }
+```
+No Entanto, o *float* altera a estrutura da página abaixo dele, fazendo com que os outros elementos subam também. Para isso, precisamos "limpar" o efeito do float nos elementos abaixo. Para fazer isso, vamos no CSS, no elemento logo abaixo do qual atribuimos o float e colocamos a propriedade *clear*, indicando qual float que queremos *"limpar"*. Exemplo:
+```CSS
+    .fonte-titulo {
+        font-size: 2em;
+        margin: 0 0 1em;
+        clear: left;
+    }
+    .utensilios {
+        width: 150px;
+        float: left; /* designamos para que lado queremos que o elemento flutue */
+    }
+```
