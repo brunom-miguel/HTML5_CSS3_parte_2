@@ -498,7 +498,7 @@ Quando queremos fazer algum detalhe visual em cima do *iframe* que trouxemos, se
 ```
 ```CSS
     .video {
-    width: 560px;
-    margin: 1em auto;
+        width: 560px;
+        margin: 1em auto;
     }
 ```
