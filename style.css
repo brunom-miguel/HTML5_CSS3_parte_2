@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 header {
@@ -96,7 +97,7 @@ footer {
 }
 
 main {
-    width: 940px;
+    width: 940px; /* delimita a largura da parte principal da página */
     margin: 0 auto;
 }
 
@@ -164,7 +165,7 @@ td, th { /*estilizção para as células*/
     width: 100%;
 }
 
-.titulo-princial {
+.titulo-principal {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em; /* vai ter o espaço, para baixo, do tamanho da própria fonte */
@@ -191,5 +192,14 @@ td, th { /*estilizção para as células*/
 
 .imagem-beneficios {
     width: 60%;
+}
+
+.mapa {
+    padding: 3em 0; /* espaçamento proporcional ao tamanho da fonte do site */
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
 }
 

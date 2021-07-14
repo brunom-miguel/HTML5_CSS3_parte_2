@@ -477,3 +477,7 @@ Benefícios do uso de fontes externas:
 * Padronizar o conteúdo em todos os navegadores;
 * Deixar o site mais bonito, fora do padrão;
 * Termos mais alternativas de fonte.
+
+#### Trabalhando com mapas
+
+Importamos o mapa pelo google [maps](https://www.google.com.br/maps).
