@@ -467,3 +467,13 @@ No Entanto, o *float* altera a estrutura da página abaixo dele, fazendo com que
         float: left; /* designamos para que lado queremos que o elemento flutue */
     }
 ```
+Tanto o *float: left* quanto o *float: right* servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele.
+
+#### Fontes externas
+
+Site para importação de fontes do [google](https://fonts.google.com/).
+
+Benefícios do uso de fontes externas:
+* Padronizar o conteúdo em todos os navegadores;
+* Deixar o site mais bonito, fora do padrão;
+* Termos mais alternativas de fonte.
