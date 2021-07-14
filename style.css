@@ -154,3 +154,30 @@ td, th { /*estilizção para as células*/
     text-align: center;
     padding: 4px 15px;
 }
+
+/* css da página inicial */
+.banner {
+    width: 100%;
+}
+
+.titulo-princial {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em; /* vai ter o espaço, para baixo, do tamanho da própria fonte */
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
