@@ -48,6 +48,24 @@ Em uma lista, colocamos a propriedade "display: inline block" no **ul**. O **ul*
 * Como se comporta um elemento que tem seu **display** com o valor *inline-block*?
     * O tamanho pode ser ajustado, tanto na largura, quanto na altura
 
+OBS: A lista (*ul*) é um elemento **inline**, mas os itens da lista (*li*) são elementos **block** (para ficar um do lado do outro).
+OBS2: Se colocamos o **inline-block** em uma lista (*ul*) para que uma imagem que vem depois fique ao lado, precisamos fazer com que a tag *img* e a tag da lista *ul* fiquem coladas, como abaixo, caso contrario elas não ficarão uma do lado da outra:
+
+```HTML
+    <ul class="lista-beneficios">
+        <li class="itens">Atendimento aos clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais qualificados</li>
+    </ul><img class="imagem-beneficios" src="beneficios.jpg" alt="imagem beneficios">
+```
+```CSS
+    .lista-beneficios {
+        width: 40%;
+        display: inline-block; /* para fazer a imagem ir para o lado da lista */
+    }
+```
+
 ### Border-box
 
 * Quando incluimos um espaçamento interno (padding), sendo que já contabilizamos os percentuais para fechar 100%, o navegador soma os pixels do padding + o percentual, assim temos uma quebra de bloco.
@@ -502,3 +520,22 @@ Quando queremos fazer algum detalhe visual em cima do *iframe* que trouxemos, se
         margin: 1em auto;
     }
 ```
+#### Pseudo-classes
+
+* :hover
+* :active
+* :visited
+* :required
+* :first-child
+    * Aplica CSS no primeiro elemento com a classe;
+* :last-child
+    * Aplica CSS no ultimo elemento com a classe;
+* :nth-child (numero *n* da lista)
+
+##### *:nth-child*
+
+:nth-child (4) -> pega o 4º elemento e aplica a edição
+:nth-child (2n) -> usa o valor de *n*. Nesse caso, pega os valores **pares** e aplica o CSS (2º, 4º, 6º, ...)
+:nth-child (2n-1) -> usa o valor de *n*. Nesse caso, pega os valores **impares** e aplica o CSS (1º, 3º, 5º, ...)
+
+
