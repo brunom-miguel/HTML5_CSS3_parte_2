@@ -538,4 +538,55 @@ Quando queremos fazer algum detalhe visual em cima do *iframe* que trouxemos, se
 :nth-child (2n) -> usa o valor de *n*. Nesse caso, pega os valores **pares** e aplica o CSS (2º, 4º, 6º, ...)
 :nth-child (2n-1) -> usa o valor de *n*. Nesse caso, pega os valores **impares** e aplica o CSS (1º, 3º, 5º, ...)
 
+#### Aplicando Gradientes
+
+Usamos a propriedade *linear-gradiente()*.
+
+* Indo da cor laranja à cor azul 
+```CSS
+    .conteudo-mapa {
+        width: 940px;
+        margin: 0 auto;
+        background: linear-gradient(orange, blue);
+    }
+```
+* Podemos aplicar em quantas cores quisermos. Incluindo vermelhor, verde e preto:
+```CSS
+    .conteudo-mapa {
+        width: 940px;
+        margin: 0 auto;
+        background: linear-gradient(orange, blue, red, green, black);
+    }
+```
+Cada cor começa em um ponto e vai até outro. No exemplo acima, temos o seguinte:
+
+* (0% orange, 25% blue, 50% red, 75% green, 100% black)
+
+* Podemos inclusive delimitar quanto queremos que determinada cor tenha de tamanho. No exemplo abaixo, a cor laranja tera 50% do espaço:
+```CSS
+    .conteudo-mapa {
+        width: 940px;
+        margin: 0 auto;
+        background: linear-gradient(orange 50%, blue, red, green, black);
+    }
+```
+
+Podemos também inclinar o gradiente usand o *deg* (degrees/graus). No exemplo abaixo, o gradiente ficara *"em pé"*, em 90º
+```CSS
+    .conteudo-mapa {
+        width: 940px;
+        margin: 0 auto;
+        background: linear-gradient(90deg ,orange 50%, blue, red, green, black);
+    }
+```
+
+Podemos também fazer, ao invez de gradiente reto *linear*, fazer de forma circular *radial* (nesse caso não temos um grau de inclinação):
+```CSS
+    .conteudo-mapa {
+        width: 940px;
+        margin: 0 auto;
+        background: radial-gradient(orange 50%, blue, red, green, black);
+    }
+```
+
 

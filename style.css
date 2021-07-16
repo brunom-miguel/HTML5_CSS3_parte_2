@@ -97,8 +97,7 @@ footer {
 }
 
 main {
-    width: 940px; /* delimita a largura da parte principal da página */
-    margin: 0 auto;
+    
 }
 
 form {
@@ -172,6 +171,13 @@ td, th { /*estilizção para as células*/
     clear: left;
 }
 
+.principal {
+    padding: 3em 0; /* espaçamento proporcional ao tamanho da fonte do site */
+    background: #FEFEFE;
+    width: 940px; /* delimita a largura da parte principal da página */
+    margin: 0 auto;
+}
+
 .principal p {
     margin: 0 0 1em;
 }
@@ -192,6 +198,12 @@ td, th { /*estilizção para as células*/
 
 .mapa {
     padding: 3em 0; /* espaçamento proporcional ao tamanho da fonte do site */
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.conteudo-mapa {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -199,8 +211,9 @@ td, th { /*estilizção para as células*/
     margin: 0 0 2em;
 }
 
-.beneficio {
-    padding: 3em 0;
+.beneficios {
+    padding: 3em 0; /* espaçamento proporcional ao tamanho da fonte do site */
+    background: #888888;
 }
 
 .conteudo-beneficios {
