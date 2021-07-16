@@ -235,6 +235,10 @@ td, th { /*estilizção para as células*/
     font-weight: bold;
 }
 
+.itens:before {
+    content: "★ ";
+}
+
 .imagem-beneficios {
     width: 60%;
 }

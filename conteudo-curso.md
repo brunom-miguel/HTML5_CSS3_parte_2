@@ -589,4 +589,25 @@ Podemos também fazer, ao invez de gradiente reto *linear*, fazer de forma circu
     }
 ```
 
+#### Pseudo-elementos
+
+* :first-letter = podemos usar para estilizar a primeira **letra** de um elemento/parágrafo
+* :first-line = podemos usar para estilizar a primeira **linha** de um elemento/parágrafo
+
+##### :before/:after
+* :before = usamos a propriedade *content* com aspas para colocar o que queremos que apareça **antes** do elemento; 
+* :after = usamos a propriedade *content* com aspas para colocar o que queremos que apareça **depois** do elemento;
+Exemplo:
+```CSS
+    .titulo-principal:before {
+        content: "[";
+    }
+
+.titulo-principal:after {
+        content: "]";
+    }
+```
+No exemplo acima, é aplicado antes do elemento de classe *titulo-principal* a abertura de chaves "[" e depois da classe o fechamento de chaves "]"
+
+
 
