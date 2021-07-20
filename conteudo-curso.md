@@ -782,3 +782,5 @@ E para aplicar CSS em tamanhos específicos de tela, usamos as "media queries":
         }
     }
 ```
+
+Quando estamos sobrescrevendo um elemento, mexemos apenas no que queremos que mude.
