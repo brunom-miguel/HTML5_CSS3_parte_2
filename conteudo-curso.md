@@ -751,7 +751,7 @@ Usamos o valor *inset*:
 
 ```CSS
     .imagem-beneficios {
-        box-shadow: inset 10px 10px 15px 5px #000000;
+        box-shadow: inset 0 0 5px #000000; /* sombra interna, preta, com 5px de espalhamento */
     }
 ```
 
@@ -762,5 +762,23 @@ Usamos a propriedade *text-shadow* e utilizamos os mesmos valores:
 ```CSS
     p {
         text-shadow: 2px 2px 0 0 #FF0000;
+    }
+```
+
+#### Meta tag Viewport
+
+Para trabalhar com um site responsivo, começamos com a *meta* tag com name *viewport*:
+
+```HTML
+    <meta name="viewport" content="width=device-width">
+```
+
+E para aplicar CSS em tamanhos específicos de tela, usamos as "media queries":
+
+```CSS
+    @media screen and (max-width: 480px) {
+        body {
+            background-color: red;
+        }
     }
 ```
