@@ -609,5 +609,76 @@ Exemplo:
 ```
 No exemplo acima, é aplicado antes do elemento de classe *titulo-principal* a abertura de chaves "[" e depois da classe o fechamento de chaves "]"
 
+#### Seletores Avançados
 
+##### Sinal *>*
+
+No CSS, para estilizar, por exemplo, uma tag *p* dentro do *main*, fazemos da seguinte forma:
+
+```CSS
+    main p {
+        background-color: red;
+    }
+```
+
+No entanto, se tivermos, dentro do *main*, uma tag *section* com tags *p* dentro dela, essas também sofrerão a estilização acima.
+
+Então, para resolver isso, no CSS3 temos a opção de estilizar os filhos **diretos** de determinadas tags. Sendo assim, o exemplo acima ficaria da seguinte forma:
+
+```CSS
+    main > p {
+        background-color: red;
+    }
+```
+##### Sinal *+*
+
+Podemos também estilizar o primeiro elemento que vem após determinada tag (que marcamos como âncora):
+
+```CSS
+    img + p {
+        background-color: blue;
+    }
+```
+
+No exemplo acima, todas as primeiras tags *p* que estão após as tags *img* estarão com o fundo azul.
+
+##### Sinal *~*
+
+Funciona com a mesma ideia do *+*, no entanto ao invés de estilizar apenas o primeiro elemento após o âncora, estiliza todos.
+
+```CSS
+    img ~ p {
+        background-color: yellow;
+    }
+```
+
+No exemplo acima, todas as tags *p* dentro das tags *img* estarão com o fundo amarelo.
+
+Para selecionar o último *h2* da seleção abaixo:
+
+```HTML
+    <h2>
+    <section>
+        <h2>
+        <p>
+        <p>
+        <h2>
+```
+Fazemos assim:
+
+```CSS
+    section > p + h2 {
+        
+    }
+```
+
+##### "Exclusão" com *not()*
+
+Se quisermos estlizar todos os elementos *p* que não tem determinada classe ou id, podemos fazer da seguinte forma:
+
+```CSS
+    .principal p:not(#missao) {
+        background-color: orange;
+    }
+```
 
