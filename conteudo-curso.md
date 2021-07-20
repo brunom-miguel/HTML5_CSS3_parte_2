@@ -611,9 +611,11 @@ No exemplo acima, é aplicado antes do elemento de classe *titulo-principal* a a
 
 #### Seletores Avançados
 
-##### Sinal *>*
+##### Seletor *>*
 
 No CSS, para estilizar, por exemplo, uma tag *p* dentro do *main*, fazemos da seguinte forma:
+
+* Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
 
 ```CSS
     main p {
@@ -632,6 +634,8 @@ Então, para resolver isso, no CSS3 temos a opção de estilizar os filhos **dir
 ```
 ##### Sinal *+*
 
+* Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+
 Podemos também estilizar o primeiro elemento que vem após determinada tag (que marcamos como âncora):
 
 ```CSS
@@ -644,7 +648,7 @@ No exemplo acima, todas as primeiras tags *p* que estão após as tags *img* est
 
 ##### Sinal *~*
 
-Funciona com a mesma ideia do *+*, no entanto ao invés de estilizar apenas o primeiro elemento após o âncora, estiliza todos.
+* Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
 
 ```CSS
     img ~ p {
@@ -674,7 +678,7 @@ Fazemos assim:
 
 ##### "Exclusão" com *not()*
 
-Se quisermos estlizar todos os elementos *p* que não tem determinada classe ou id, podemos fazer da seguinte forma:
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
 
 ```CSS
     .principal p:not(#missao) {
@@ -707,3 +711,56 @@ Para deixarmos um elemento de 100% de largura com o equivalente a *um terço do 
         }
       ```
 
+#### Opacidade
+
+* Propriedade *opacity*. Começando no 0 (vê 0% do elemento) e indo até o 1 (vê 100% do elemento):
+```CSS
+    .imagem-beneficios {
+       width: 60%;
+        opacity: 1;
+        transition: 400ms;
+    }
+
+    .imagem-beneficios:hover {
+         opacity: 0.7;
+    }
+```
+* rgba() para cores:
+
+#### Sombras
+
+Usamos a propriedade *box-shadow*:
+
+```CSS
+    .imagem-beneficios {
+        box-shadow: 10px 10px 15px 5px #000000;
+    }
+```
+* Primeiro valor:
+    * Indica o eixo X;
+* Segundo valor:
+    * Indica o eixo Y;
+* Terceiro valor:
+    * Indica a intensidade (indo do sólido até o transparente);
+* Quarto valor:
+    * Indica a distância (até onde a sombra vai se extender);
+
+##### Sombra interna
+
+Usamos o valor *inset*:
+
+```CSS
+    .imagem-beneficios {
+        box-shadow: inset 10px 10px 15px 5px #000000;
+    }
+```
+
+##### Sombra em textos
+
+Usamos a propriedade *text-shadow* e utilizamos os mesmos valores:
+
+```CSS
+    p {
+        text-shadow: 2px 2px 0 0 #FF0000;
+    }
+```
