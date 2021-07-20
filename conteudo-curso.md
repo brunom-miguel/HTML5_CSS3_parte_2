@@ -668,7 +668,7 @@ Fazemos assim:
 
 ```CSS
     section > p + h2 {
-        
+
     }
 ```
 
@@ -681,4 +681,29 @@ Se quisermos estlizar todos os elementos *p* que não tem determinada classe ou 
         background-color: orange;
     }
 ```
+
+#### Cálculos com CSS
+
+Podemos realizar cálculos com CSS com *calc()*.
+
+```CSS
+    section {
+        width: calc(40% - 26px)
+    }
+```
+
+Para deixarmos um elemento de 100% de largura com o equivalente a *um terço do elemento pai menos 10px* podemos das formas abaixo:
+
+* Forma mais complexa, sem necessidade da primeira conta, mas funciona:
+    * ```CSS
+        div {
+            width: calc( (100% / 3) - 10px );
+        }
+      ```
+* Forma mais direta de chegar nesse resultado:
+    * ```CSS
+        div {
+            width: calc ( 33% - 10px );
+        }
+      ```
 
