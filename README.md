@@ -7,12 +7,12 @@ Site simples criada para estudo de HTML e CSS.
 
 ### Home
 
-![Página Home site Barbearia](C:\Users\bruno\OneDrive\Área de Trabalho\Área de Estudos\Cursos\Alura\Formação Front-End\HTML5_CSS3_parte_2\pagina_home.jpeg)
+![Página Home site Barbearia](https://github.com/brunom-miguel/HTML5_CSS3_parte_2/blob/main/pagina_home.jpeg?raw=true)
 
 ### Produtos
 
-![Página Produtos site Barbearia](C:\Users\bruno\OneDrive\Área de Trabalho\Área de Estudos\Cursos\Alura\Formação Front-End\HTML5_CSS3_parte_2\pagina_produtos.jpeg)
+![Página Produtos site Barbearia](https://github.com/brunom-miguel/HTML5_CSS3_parte_2/blob/main/pagina_produtos.jpeg?raw=true)
 
 ### Contato
 
-![Página Contato site Barbearia](C:\Users\bruno\OneDrive\Área de Trabalho\Área de Estudos\Cursos\Alura\Formação Front-End\HTML5_CSS3_parte_2\pagina_contato.jpeg)
+![Página Contato site Barbearia](https://github.com/brunom-miguel/HTML5_CSS3_parte_2/blob/main/pagina_contato.jpeg?raw=true)
